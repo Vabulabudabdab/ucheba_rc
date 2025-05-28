@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('', [\App\Http\Controllers\V0\IndexController::class,  'index'])->name('index');
 Route::get('posts', [\App\Http\Controllers\V0\IndexController::class,  'posts'])->name('index.posts');
-
+Route::get('faq', [\App\Http\Controllers\V0\IndexController::class,  'faq'])->name('index.faq');
 Route::get('posts/show/{post}', [\App\Http\Controllers\V0\IndexController::class,  'posts_show'])->name('index.posts.show');
 
 Route::post('posts/search/{category}', [\App\Http\Controllers\V0\IndexController::class,  'posts_search'])->name('index.posts.search');

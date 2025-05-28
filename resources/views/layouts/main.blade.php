@@ -35,7 +35,7 @@
             <li class="nav-item"><a href="{{route('admin.index')}}" class="nav-link hover-color" aria-current="page">Админка</a></li>
         @endif
         <li class="nav-item"><a href="{{route('index.posts')}}" class="nav-link hover-color">База знаний</a></li>
-        <li class="nav-item"><a href="#" class="nav-link hover-color">FAQ</a></li>
+        <li class="nav-item"><a href="{{route('index.faq')}}" class="nav-link hover-color">FAQ</a></li>
         @if(auth()->user())
             <li class="nav-item"><a href="{{route('logout')}}" class="nav-link hover-color">Выйти</a></li>
         @else
@@ -54,7 +54,7 @@
         @if(auth()->user() && auth()->user()->role_id == 1)
             <li class="nav-item"><a href="{{route('admin.index')}}" class="nav-link hover-color" aria-current="page">Админка</a></li>
         @endif
-        <li class="nav-item"><a href="#" class="nav-link hover-color px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="{{route('index.faq')}}" class="nav-link hover-color px-2 text-body-secondary">FAQ</a></li>
         @if(auth()->user())
             <li class="nav-item"><a href="{{route('logout')}}" class="nav-link hover-color px-2 text-body-secondary">Выйти</a></li>
         @else

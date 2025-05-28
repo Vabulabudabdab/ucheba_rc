@@ -12,8 +12,12 @@ class IndexController {
         return view('index', compact('random_posts'));
     }
 
+    public function faq() {
+        return view('faq');
+    }
+
     public function posts() {
-        $posts = Post::paginate(9);
+        $posts = Post::paginate(3);
         $categories = Category::all();
         return view('posts', compact('posts', 'categories'));
     }
